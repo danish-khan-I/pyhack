@@ -62,7 +62,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'pygoat.urls'
+ROOT_URLCONF = 'pyhack.urls'
 
 TEMPLATES = [
     {
@@ -80,7 +80,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pygoat.wsgi.application'
+WSGI_APPLICATION = 'pyhack.wsgi.application'
 
 
 # Database
