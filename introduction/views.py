@@ -306,7 +306,12 @@ def robots(request):
         return response
 
 def error(request):
-    return 
+    debug  =  request.headers.get('debug', 'false')
+    if debug == 'true':
+        return
+    else:
+        response = render(request,'Lab/noAccess.html')
+        return response
 
 
 #******************************************************  Command Injection  ***********************************************************************#
@@ -462,6 +467,13 @@ def a10_lab(request):
         return redirect('login')
 
 def debug(request):
-    response = render(request,'Lab/A10/debug.log')
-    response['Content-Type'] =  'text/plain'
-    return response
+    debug  =  request.headers.get('debug', 'false')
+    print(debug)
+    if debug == 'true':
+        response = render(request,'Lab/A10/debug.log')
+        response['Content-Type'] =  'text/plain'
+        return response        
+    else:
+        response = render(request,'Lab/noAccess.html')
+        return response 
+        
