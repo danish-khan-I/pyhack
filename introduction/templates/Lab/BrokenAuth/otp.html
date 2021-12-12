@@ -2,21 +2,28 @@
 <title>Broken Authentication Lab</title>
 {% endblock %}
 <div class="jumbotron bg-themed">
-  <div class="container">
-    <h5 align="center">Login Through Otp</h5>
-    <br />
+<div class="hero__form w-50 m-auto text-center">
+  
+    <h5 align="center" class="mb-2">Login Through Otp</h5>
+    
     <form method="get" action="/otp">
-      <input name="email" type="email" placeholder="yourid@mail.com" />
-      <button class="btn btn-primary" type="submit">Send OTP</button>
+      <input name="email" type="email" placeholder="yourid@mail.com" class="form-control" />
+      
+      <button style="margin-top: 20px" class="site-btn w-50" type="submit">
+        Send OTP
+      </button>
+    </form>
+  
+</div>
+</div>
+<div class="container ">
+  <div class="w-50 m-auto">
+    <form method="post" action="/otp">
+      <label for="enter">Enter Your OTP:</label>
+      <input id="enter" type="number" maxlength="3" name="otp"  class="form-control"  /><br /><br />
+      <button class="site-btn" type="submit">Log in</button>
     </form>
   </div>
-</div>
-<div class="container">
-  <form method="post" action="/otp">
-    <label for="enter">Enter Your OTP:</label>
-    <input id="enter" type="number" maxlength="3" name="otp" /><br /><br />
-    <button class="btn btn-info" type="submit">Log in</button>
-  </form>
 </div>
 <br />
 <div class="container">

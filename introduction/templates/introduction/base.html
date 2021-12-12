@@ -25,6 +25,17 @@
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <style type="text/css">
+        /* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 976px) {
+    div.hero__form.w-50{
+    width: 100% !important;
+    }
+  }
+
+
+
+    </style>
 </head>
 
 <body>
@@ -40,23 +51,25 @@
             <i class="fa fa-search search-switch"></i>
         </div>
         <div class="offcanvas__logo">
-            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+            <a href="/"><img src="{% static 'img/logo.png' %}" alt=""></a>
         </div>
         <nav class="offcanvas__menu mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
+                <li class="active"><a href="/">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./services.html">Services</a></li>
                 <li><a href="./blog.html">Blog</a></li>
-                <li><a href="#">Pages</a>
-                    <ul class="dropdown">
-                        <li><a href="./services.html">Features</a></li>
-                        <li><a href="./services-details.html">Services Details</a></li>
-                        <li><a href="./blog-details.html">Blog Details</a></li>
-                    </ul>
+                <li><a href="/auth_lab/login">Login</a></li>
+                <li>
+                  <a href="#">Pages</a>
+                  <ul class="dropdown">
+                    <li><a href="./services.html">Features</a></li>
+                    <li><a href="./services-details.html">Services Details</a></li>
+                    <li><a href="./blog-details.html">Blog Details</a></li>
+                  </ul>
                 </li>
                 <li><a href="./contact.html">Contact</a></li>
-            </ul>
+              </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
         <ul class="offcanvas__widget">
@@ -65,7 +78,7 @@
             <li><i class="fa fa-envelope"></i> Info@colorlib.com</li>
         </ul>
         <div class="offcanvas__language">
-            <img src="img/flag.png" alt="">
+            <img src="{% static 'img/flag.png' %}" alt="">
             <span>English</span>
             <i class="fa fa-angle-down"></i>
             <ul>
@@ -90,7 +103,7 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="header__top__language">
-                            <img src="img/flag.png" alt="">
+                            <img src="{% static 'img/flag.png' %}" alt="">
                             <span>English</span>
                             <i class="fa fa-angle-down"></i>
                             <ul>
@@ -106,17 +119,18 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="/"><img src="{% static 'img/logo.png' %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-9">
                     <div class="header__nav">
                         <nav class="header__menu">
                             <ul>
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./services.html">Services</a></li>
-                                <li><a href="./blog.html">Blog</a></li>
+                                <li class="active"><a href="/">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="/auth_lab/login">Login</a></li>
                                 <li><a href="#">Pages</a>
                                     <ul class="dropdown">
                                         <li><a href="./services.html">Features</a></li>
@@ -124,7 +138,7 @@
                                         <li><a href="./blog-details.html">Blog Details</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./contact.html">Contact</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </nav>
                         <div class="header__search">
@@ -148,7 +162,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="./index.html"><img src="img/footer-logo.png" alt=""></a>
+                            <a href="/"><img src="{% static 'img/footer-logo.png' %}" alt=""></a>
                         </div>
                         <p>Please remember though that how far you go is up to you. There is no substitute for your own
                             work and effort in succeeding in this business.</p>

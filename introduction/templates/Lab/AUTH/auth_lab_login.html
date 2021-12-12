@@ -3,7 +3,7 @@
 {% endblock %}
 
 <div class="jumbotron bg-themed">
-  <div class="login" style="text-align: center">
+  <div class="hero__form w-50 m-auto" style="text-align: center">
     <form method="post" action="/auth_lab/login">
       {% csrf_token %}
       <input
@@ -11,24 +11,26 @@
         type="text"
         name="username"
         placeholder="User Name"
+        class="form-control"
         required
       /><br />
       <input
         id="input"
         type="password"
         name="pass"
+        class="form-control"
         placeholder="Password"
         required
       /><br />
-      <button style="margin-top: 20px" class="btn btn-primary" type="submit">
+      <button style="margin-top: 20px" class="site-btn" type="submit">
         Login
       </button>
     </form>
   </div>
   <br />
   <div style="text-align: center">
-    <button onclick="window.location.href='/auth_lab'" class="btn btn-primary">
-      Lab Home
+    <button onclick="window.location.href='/auth_lab'" class="btn btn-text">
+      Register?
     </button>
   </div>
 </div>

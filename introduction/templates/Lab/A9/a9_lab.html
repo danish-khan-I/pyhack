@@ -3,12 +3,16 @@
 {% endblock %}
 
 <div class="jumbotron bg-themed">
-  <h4 style="text-align: center">Yaml To Json Converter</h4>
+  <div class="hero__form w-50 m-auto">
+  
+  <h4 style="text-align: center" class="mb-2">Yaml To Json Converter</h4>
+  <!-- Yaml To Json Converter -->
   <form enctype="multipart/form-data" method="post" action="/a9_lab">
-    <input type="file" name="file" /><br />
+    <input type="file" name="file" class="form-control" /><br />
     <br />
-    <button class="btn btn-primary" type="submit">Upload</button>
+    <button class="site-btn" type="submit">Upload</button>
   </form>
+  </div>
 </div>
 <br />
 <br />
@@ -20,9 +24,13 @@
 </div>
 <br />
 <div class="container">
-  <button class="btn btn-info" onclick="window.location.href='/get_version'">
+  <div class="hero__form w-50 m-auto text-center">
+
+  <button class="primary-btn  btn-secondary" onclick="window.location.href='/get_version'">
     Get Version</button
-  ><code>{{version}}</code>
+  >
+  <br /><code>{{version}}</code>
+  </div>
 </div>
 
 {% endblock %}
