@@ -32,43 +32,43 @@ INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1913
 INFO "GET /static/admin/css/login.css HTTP/1.1" 200 1233
 INFO "GET /logout/ HTTP/1.1" 200 1207
 INFO "GET /login/ HTTP/1.1" 200 7978
-INFO A:\wsl\pyhack\pyhack\pyhack\pyhack\urls.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\strawberryfinancials\urls.py changed, reloading.
 INFO Watching for file changes with StatReloader
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
 ERROR Internal Server Error: /register
 Traceback (most recent call last):
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
     response = get_response(request)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
     raise ValueError(
 ValueError: The view introduction.views.register didn't return an HttpResponse object. It returned None instead.
 ERROR "GET /register HTTP/1.1" 500 63038
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO "GET /register HTTP/1.1" 200 18
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO "GET /register HTTP/1.1" 200 9207
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO "GET /register HTTP/1.1" 200 9341
 INFO "POST /register HTTP/1.1" 302 0
@@ -76,70 +76,70 @@ INFO "GET /login/ HTTP/1.1" 200 7978
 INFO "GET / HTTP/1.1" 200 8157
 INFO "GET /admin HTTP/1.1" 301 0
 INFO "GET /admin/ HTTP/1.1" 302 0
-INFO A:\wsl\pyhack\pyhack\pyhack\pyhack\settings.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\strawberryfinancials\settings.py changed, reloading.
 INFO Watching for file changes with StatReloader
-INFO A:\wsl\pyhack\pyhack\pyhack\pyhack\settings.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\strawberryfinancials\settings.py changed, reloading.
 INFO Watching for file changes with StatReloader
 ERROR Internal Server Error: /register
 Traceback (most recent call last):
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
     return self.template.render(context)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\base.py", line 171, in render
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\base.py", line 171, in render
     return self._render(context)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\base.py", line 163, in _render
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\base.py", line 163, in _render
     return self.nodelist.render(context)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\base.py", line 936, in render
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\base.py", line 936, in render
     bit = node.render_annotated(context)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
     return self.render(context)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\loader_tags.py", line 150, in render
     return compiled_parent._render(context)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\base.py", line 163, in _render
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\base.py", line 163, in _render
     return self.nodelist.render(context)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\base.py", line 936, in render
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\base.py", line 936, in render
     bit = node.render_annotated(context)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
     return self.render(context)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\loader_tags.py", line 62, in render
     result = block.nodelist.render(context)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\base.py", line 936, in render
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\base.py", line 936, in render
     bit = node.render_annotated(context)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\base.py", line 903, in render_annotated
     return self.render(context)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\base.py", line 986, in render
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\base.py", line 986, in render
     output = self.filter_expression.resolve(context)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\base.py", line 697, in resolve
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\base.py", line 697, in resolve
     new_obj = func(obj, *arg_vals)
-  File "A:\wsl\pyhack\venv\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 61, in as_crispy_form
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 61, in as_crispy_form
     template = uni_form_template(template_pack)
-  File "A:\wsl\pyhack\venv\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 22, in uni_form_template
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\crispy_forms\templatetags\crispy_forms_filters.py", line 22, in uni_form_template
     return get_template("%s/uni_form.html" % template_pack)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
     raise TemplateDoesNotExist(template_name, chain=chain)
 django.template.exceptions.TemplateDoesNotExist: boostrap4/uni_form.html
 
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
     response = get_response(request)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "A:\wsl\pyhack\pyhack\pyhack\introduction\views.py", line 32, in register
+  File "A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py", line 32, in register
     return render(request,"registration/register.html",{"form":form})
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\shortcuts.py", line 19, in render
     content = loader.render_to_string(template_name, context, request, using=using)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
     return template.render(context, request)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\backends\django.py", line 63, in render
     reraise(exc, self.backend)
-  File "A:\wsl\pyhack\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+  File "A:\wsl\strawberryfinancials\venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
     raise new from exc
 django.template.exceptions.TemplateDoesNotExist: boostrap4/uni_form.html
 ERROR "GET /register HTTP/1.1" 500 176529
-INFO A:\wsl\pyhack\pyhack\pyhack\pyhack\settings.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\strawberryfinancials\settings.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO "GET /register HTTP/1.1" 200 9946
 INFO "GET /register HTTP/1.1" 200 9928
@@ -154,9 +154,9 @@ INFO "POST /login/ HTTP/1.1" 200 9120
 INFO "GET /login/ HTTP/1.1" 200 8993
 INFO "GET /login/ HTTP/1.1" 200 9004
 INFO "GET /register HTTP/1.1" 200 9928
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO "GET /register HTTP/1.1" 200 9928
 INFO "GET / HTTP/1.1" 200 8157
@@ -167,7 +167,7 @@ INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1913
 INFO "GET /logout/ HTTP/1.1" 200 1207
 INFO "GET / HTTP/1.1" 200 8303
 INFO "GET / HTTP/1.1" 200 8303
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO "GET / HTTP/1.1" 302 0
 INFO "GET /login/ HTTP/1.1" 200 9004
@@ -177,7 +177,7 @@ INFO "GET /login/ HTTP/1.1" 200 9004
 INFO "POST /login/ HTTP/1.1" 302 0
 WARNING Not Found: /accounts/profile/
 WARNING "GET /accounts/profile/ HTTP/1.1" 404 9497
-INFO A:\wsl\pyhack\pyhack\pyhack\pyhack\settings.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\strawberryfinancials\settings.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO "GET /login/ HTTP/1.1" 200 9004
 INFO "POST /login/ HTTP/1.1" 302 0
@@ -187,7 +187,7 @@ INFO "GET /login/ HTTP/1.1" 200 9004
 INFO "GET / HTTP/1.1" 200 8157
 INFO "GET / HTTP/1.1" 200 8157
 INFO "GET / HTTP/1.1" 200 8157
-INFO A:\wsl\pyhack\pyhack\pyhack\pyhack\settings.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\strawberryfinancials\settings.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO "GET /login/ HTTP/1.1" 200 9004
 INFO "GET /logout/ HTTP/1.1" 200 1207
@@ -254,7 +254,7 @@ INFO "GET /login/ HTTP/1.1" 200 9017
 INFO "GET /login/ HTTP/1.1" 200 9072
 INFO "GET / HTTP/1.1" 302 0
 INFO "GET /login/ HTTP/1.1" 200 9072
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO "GET /login/ HTTP/1.1" 200 9072
 INFO "GET / HTTP/1.1" 200 8170
@@ -275,10 +275,10 @@ INFO "GET /xxe HTTP/1.1" 200 13098
 INFO "GET /xxe_lab HTTP/1.1" 302 0
 INFO "GET /login/ HTTP/1.1" 200 9164
 INFO "GET /login/ HTTP/1.1" 200 9157
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO "GET / HTTP/1.1" 200 8255
-INFO A:\wsl\pyhack\pyhack\pyhack\introduction\views.py changed, reloading.
+INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\introduction\views.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO "GET / HTTP/1.1" 200 8255
 INFO "GET /sql HTTP/1.1" 200 11869

@@ -1,1 +1,1 @@
-web: gunicorn pyhack.wsgi --log-file -
+web: gunicorn strawberryfinancials.wsgi --log-file -

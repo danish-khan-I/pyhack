@@ -1,7 +1,7 @@
 services:
   web:
     build: .
-    image: pyhack
+    image: strawberryfinancials
     command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "3000:3000"
@@ -12,7 +12,7 @@ services:
       - migration
       - db
   migration:
-    image: pyhack
+    image: strawberryfinancials
     command: python manage.py migrate --noinput
     volumes:
       - .:/code
