@@ -1,242 +1,240 @@
 <!DOCTYPE html>
 {% load static %}
+<html lang="zxx">
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Loanday Template">
+    <meta name="keywords" content="Loanday, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% block title %}
     <title>Test</title>
     {% endblock %}
 
-    <!-- Bootstrap CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-      crossorigin="anonymous"
-    />
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="{% static 'introduction/style4.css'%}" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome JS -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="{% static 'Lab/xss.js' %}"></script>
-  </head>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
 
-  <body>
-    <div class="wrapper">
-      <!-- Sidebar  -->
-      <!-- <nav id="sidebar">
-        <div class="sidebar-header">
-          <h3 class="brand-lg">Loading</h3>
-          <strong class="brand-sm">LD</strong>
-        </div>
-
-        <ul class="list-unstyled components">
-          <li class="active">
-            <a
-              href="#homeSubmenu"
-              data-toggle="collapse"
-              aria-expanded="false"
-              class="dropdown-toggle"
-            >
-              <i class="fas fa-home"></i>
-              Home
-            </a>
-            <ul class="collapse list-unstyled" id="homeSubmenu">
-              <li>
-                <a href="/">Introduction</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a
-              href="#sqlSubmenu"
-              data-toggle="collapse"
-              aria-expanded="false"
-              class="dropdown-toggle"
-            >
-              <i class="fas fa-bug"></i>
-              A1: Injection
-            </a>
-            <ul class="collapse list-unstyled" id="sqlSubmenu">
-              <li>
-                <a href="/sql">SQl Injection </a>
-              </li>
-              <li>
-                <a href="/cmd">Command Injection</a>
-              </li>
-            </ul>
-            <a href="/bau">
-              <i class="fas fa-bug"></i>
-              A2: Broken Authentication
-            </a>
-            <a href="/data_exp">
-              <i class="fas fa-bug"></i>
-              A3: Sensitive Data Exposure
-            </a>
-            <a href="/xxe">
-              <i class="fas fa-bug"></i>
-              A4: XML External Entities (XXE)
-            </a>
-            <a href="/ba">
-              <i class="fas fa-bug"></i>
-              A5: Broken Access Control
-            </a>
-            <a href="/sec_mis">
-              <i class="fas fa-bug"></i>
-              A6: Security Misconfiguration
-            </a>
-            <a href="/xss">
-              <i class="fas fa-bug"></i>
-              A7: Cross Site Scripting
-            </a>
-
-            <a href="/insec_des">
-              <i class="fas fa-bug"></i>
-              A8: Insecure Deserialization
-            </a>
-            <a href="/a9">
-              <i class="fas fa-bug"></i>
-              A9: Using Components with Known Vulnerabilities
-            </a>
-            <a href="/a10">
-              <i class="fas fa-bug"></i>
-              A10: Insufficient Logging & Monitoring
-            </a>
-            <a href="/auth">
-              <i class="fas fa-bug"></i>
-              Authentication
-            </a>
-            <a
-              href="#challengeSubmenu"
-              data-toggle="collapse"
-              aria-expanded="false"
-              class="dropdown-toggle"
-            >
-              <i class="fas fa-flag"></i>
-              Challenges
-            </a>
-            <ul class="collapse list-unstyled" id="challengeSubmenu">
-              <li>
-                <a href="#">Page 1</a>
-              </li>
-              <li>
-                <a href="#">Page 2</a>
-              </li>
-              <li>
-                <a href="#">Page 3</a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <a href="#">
-              <i class="fas fa-question"></i>
-              Help
-            </a>
-          </li>
-        </ul>
-      </nav> -->
-
-      <!-- Page Content  -->
-      <div id="content">
-        <div class="row d-flex justify-content-between px-3 align-center self-center">
-          <div class="avatar" style="width: 100px;">
-            <a href="/"><img class="img-thumbnail" src="{% static 'Lab/image/brand.png' %}"  /></a>
-            <br /><br />
-          </div>
-          <div>
-            <!-- <a href="/login">Login</a> -->
-          </div>
-        </div>
-        
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
-              <i class="fas fa-align-left"></i>
-              <span>Toggle Sidebar</span>
-            </button>
-            <button
-              class="btn btn-dark d-inline-block d-lg-none ml-auto"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fas fa-align-justify"></i>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="nav navbar-nav ml-auto">
-                {% if user.is_authenticated %}
-                <li class="nav-item active">
-                  <a class="nav-link" href='{% url "logout" %}?next=/'
-                    >Logout</a
-                  >
-                </li>
-
-                {% else %}
-
-                <li class="nav-item">
-                  <a class="nav-link" href="/login">Login</a>
-                </li>
-                {% endif %}
-
-                <li class="nav-item">
-                                    <a class="nav-link" href="#">Profile</a>
-                                </li>
-              </ul>
-            </div>
-          </div>
-        </nav> -->
-
-        {% block content %} {% endblock %}
-      </div>
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
     </div>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Popper.JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap JS -->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__search">
+            <i class="fa fa-search search-switch"></i>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <nav class="offcanvas__menu mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="./services.html">Features</a></li>
+                        <li><a href="./services-details.html">Services Details</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <ul class="offcanvas__widget">
+            <li><i class="fa fa-map-marker"></i> 96 Ernser Vista Suite 437, NY, US</li>
+            <li><i class="fa fa-phone"></i> (123) 456-78-910</li>
+            <li><i class="fa fa-envelope"></i> Info@colorlib.com</li>
+        </ul>
+        <div class="offcanvas__language">
+            <img src="img/flag.png" alt="">
+            <span>English</span>
+            <i class="fa fa-angle-down"></i>
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Bangla</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
 
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $("#sidebarCollapse").on("click", function () {
-          $("#sidebar").toggleClass("active");
-        });
-        $(".brand-lg").text("Ttt");
-        $(".brand-sm").text("TT");
-      });
-    </script>
-  </body>
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <ul class="header__top__widget">
+                            <li><i class="fa fa-map-marker"></i> 96 Ernser Vista Suite 437, NY, US</li>
+                            <li><i class="fa fa-phone"></i> (123) 456-78-910</li>
+                            <li><i class="fa fa-envelope"></i> Info@colorlib.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="header__top__language">
+                            <img src="img/flag.png" alt="">
+                            <span>English</span>
+                            <i class="fa fa-angle-down"></i>
+                            <ul>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Bangla</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./services.html">Services</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
+                                <li><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./services.html">Features</a></li>
+                                        <li><a href="./services-details.html">Services Details</a></li>
+                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__search">
+                            <i class="fa fa-search search-switch"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+    {% block content %} {% endblock %}
+
+     <!-- Footer Section Begin -->
+     <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="./index.html"><img src="img/footer-logo.png" alt=""></a>
+                        </div>
+                        <p>Please remember though that how far you go is up to you. There is no substitute for your own
+                            work and effort in succeeding in this business.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Services</h5>
+                        <div class="footer__widget">
+                            <ul>
+                                <li><a href="#">Personal Loans</a></li>
+                                <li><a href="#">Business Loans</a></li>
+                                <li><a href="#">Online Cash Loans</a></li>
+                                <li><a href="#">Cash Advance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Socials</h5>
+                        <div class="footer__widget footer__widget--social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i> Skype</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget footer__widget--address">
+                        <h5>Open Hours</h5>
+                        <p>We work all days a week, Please contact us for any inquiry.</p>
+                        <ul>
+                            <li>Monday - Friday: 11:00 am - 8:00 pm</li>
+                            <li>Saturday: 10:00 am - 6:00 pm</li>
+                            <li>Sunday: 11:00 am - 6:00 pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="footer__copyright__links">
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <div class="footer__copyright__text">
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                        </div>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
 </html>
