@@ -7,6 +7,15 @@
   <div class="hero__form w-50 m-auto" style="text-align: center">
     <form method="post" action="/login">
       {% csrf_token %}
+      {% if user1 %}
+  <div class="alert alert-success">Logged in as: {{user1}}</div>
+
+  {% elif wrongpass %}
+  <div class="alert alert-danger">The password you have entered doesnt match the username!</div>
+
+  {% elif no %}
+  <div class="alert alert-danger">User Not Found</div>
+  {% else %} {% endif %}
       <input id="input" type="text" name="name" placeholder="User Name" class="form-control" /><br />
       <input
         id="input"
@@ -27,18 +36,12 @@
         Register?
       </button>
     </div>
+    {% if var %}
+    <h4>Logged in as: {{var}}</h4>
+
+    {% endif %}
   </div>
 </div>
 
-<div class="container">
-  {% if user1 %}
-  <h4>Logged in as: {{user1}}</h4>
 
-  {% elif wrongpass %}
-  <h4>The password you have entered doesnt match the username!</h4>
-
-  {% elif no %}
-  <h4>User Not Found</h4>
-  {% else %} {% endif %}
-</div>
 {% endblock %}
