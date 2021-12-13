@@ -1,17 +1,17 @@
-INFO "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
-INFO "GET /static/admin/css/base.css HTTP/1.1" 304 0
-INFO "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
-INFO "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
-INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
-INFO "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
-INFO "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
-INFO "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
-INFO "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
-INFO "GET /admin/logout/ HTTP/1.1" 200 1207
-INFO "GET /admin/logout/ HTTP/1.1" 302 0
-INFO "GET /admin/ HTTP/1.1" 302 0
-INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1913
-INFO "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO "GET /static/login/css/dashboard.css HTTP/1.1" 304 0
+INFO "GET /static/login/css/base.css HTTP/1.1" 304 0
+INFO "GET /static/login/css/responsive.css HTTP/1.1" 304 0
+INFO "GET /static/login/css/fonts.css HTTP/1.1" 304 0
+INFO "GET /static/login/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO "GET /static/login/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO "GET /static/login/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO "GET /static/login/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO "GET /static/login/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO "GET /login/logout/ HTTP/1.1" 200 1207
+INFO "GET /login/logout/ HTTP/1.1" 302 0
+INFO "GET /login/ HTTP/1.1" 302 0
+INFO "GET /login/login/?next=/login/ HTTP/1.1" 200 1913
+INFO "GET /static/login/css/login.css HTTP/1.1" 304 0
 INFO Watching for file changes with StatReloader
 INFO "GET / HTTP/1.1" 200 8157
 INFO "GET /static/introduction/style4.css HTTP/1.1" 304 0
@@ -22,14 +22,14 @@ INFO "GET /login/ HTTP/1.1" 200 7978
 INFO "GET /a10_lab?username=Hacker&password=Hacker HTTP/1.1" 301 0
 INFO "GET /logout HTTP/1.1" 301 0
 INFO "GET /logout/ HTTP/1.1" 200 1207
-INFO "GET /static/admin/css/base.css HTTP/1.1" 304 0
-INFO "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
-INFO "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
-INFO "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
-INFO "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
-INFO "GET /admin/ HTTP/1.1" 302 0
-INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1913
-INFO "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+INFO "GET /static/login/css/base.css HTTP/1.1" 304 0
+INFO "GET /static/login/css/responsive.css HTTP/1.1" 304 0
+INFO "GET /static/login/css/fonts.css HTTP/1.1" 200 423
+INFO "GET /static/login/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO "GET /static/login/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO "GET /login/ HTTP/1.1" 302 0
+INFO "GET /login/login/?next=/login/ HTTP/1.1" 200 1913
+INFO "GET /static/login/css/login.css HTTP/1.1" 200 1233
 INFO "GET /logout/ HTTP/1.1" 200 1207
 INFO "GET /login/ HTTP/1.1" 200 7978
 INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\strawberryfinancials\urls.py changed, reloading.
@@ -74,8 +74,8 @@ INFO "GET /register HTTP/1.1" 200 9341
 INFO "POST /register HTTP/1.1" 302 0
 INFO "GET /login/ HTTP/1.1" 200 7978
 INFO "GET / HTTP/1.1" 200 8157
-INFO "GET /admin HTTP/1.1" 301 0
-INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /login HTTP/1.1" 301 0
+INFO "GET /login/ HTTP/1.1" 302 0
 INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\strawberryfinancials\settings.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\strawberryfinancials\settings.py changed, reloading.
@@ -162,8 +162,8 @@ INFO "GET /register HTTP/1.1" 200 9928
 INFO "GET / HTTP/1.1" 200 8157
 INFO "GET /logout HTTP/1.1" 301 0
 INFO "GET /logout/ HTTP/1.1" 200 1207
-INFO "GET /admin/ HTTP/1.1" 302 0
-INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1913
+INFO "GET /login/ HTTP/1.1" 302 0
+INFO "GET /login/login/?next=/login/ HTTP/1.1" 200 1913
 INFO "GET /logout/ HTTP/1.1" 200 1207
 INFO "GET / HTTP/1.1" 200 8303
 INFO "GET / HTTP/1.1" 200 8303
@@ -191,11 +191,11 @@ INFO A:\wsl\strawberryfinancials\strawberryfinancials\strawberryfinancials\straw
 INFO Watching for file changes with StatReloader
 INFO "GET /login/ HTTP/1.1" 200 9004
 INFO "GET /logout/ HTTP/1.1" 200 1207
-INFO "GET /admin/ HTTP/1.1" 302 0
-INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1913
+INFO "GET /login/ HTTP/1.1" 302 0
+INFO "GET /login/login/?next=/login/ HTTP/1.1" 200 1913
 INFO "GET /logout/ HTTP/1.1" 200 1207
-INFO "GET /admin/ HTTP/1.1" 302 0
-INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1913
+INFO "GET /login/ HTTP/1.1" 302 0
+INFO "GET /login/login/?next=/login/ HTTP/1.1" 200 1913
 INFO "GET /logout/ HTTP/1.1" 200 1207
 INFO "GET / HTTP/1.1" 302 0
 INFO "GET /login/ HTTP/1.1" 200 9004
@@ -214,23 +214,23 @@ INFO "GET /login/ HTTP/1.1" 200 9017
 INFO "POST /login/ HTTP/1.1" 302 0
 INFO "GET / HTTP/1.1" 200 8170
 INFO "GET / HTTP/1.1" 200 8170
-INFO "GET /admin/ HTTP/1.1" 302 0
-INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2069
-INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
-INFO "GET /admin/ HTTP/1.1" 200 8514
-INFO "GET /admin/auth/user/ HTTP/1.1" 200 7858
-INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3223
-INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3223
-INFO "POST /admin/auth/user/ HTTP/1.1" 200 3468
-INFO "GET /static/admin/js/cancel.js HTTP/1.1" 200 409
-INFO "GET /static/admin/js/cancel.js HTTP/1.1" 200 409
-INFO "POST /admin/auth/user/ HTTP/1.1" 302 0
-INFO "GET /admin/auth/user/ HTTP/1.1" 200 7147
-INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3223
-INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3223
-INFO "GET /admin/auth/user/1/change/ HTTP/1.1" 200 15887
-INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3223
-INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+INFO "GET /login/ HTTP/1.1" 302 0
+INFO "GET /login/login/?next=/login/ HTTP/1.1" 200 2069
+INFO "POST /login/login/?next=/login/ HTTP/1.1" 302 0
+INFO "GET /login/ HTTP/1.1" 200 8514
+INFO "GET /login/auth/user/ HTTP/1.1" 200 7858
+INFO "GET /login/jsi18n/ HTTP/1.1" 200 3223
+INFO "GET /login/jsi18n/ HTTP/1.1" 200 3223
+INFO "POST /login/auth/user/ HTTP/1.1" 200 3468
+INFO "GET /static/login/js/cancel.js HTTP/1.1" 200 409
+INFO "GET /static/login/js/cancel.js HTTP/1.1" 200 409
+INFO "POST /login/auth/user/ HTTP/1.1" 302 0
+INFO "GET /login/auth/user/ HTTP/1.1" 200 7147
+INFO "GET /login/jsi18n/ HTTP/1.1" 200 3223
+INFO "GET /login/jsi18n/ HTTP/1.1" 200 3223
+INFO "GET /login/auth/user/1/change/ HTTP/1.1" 200 15887
+INFO "GET /login/jsi18n/ HTTP/1.1" 200 3223
+INFO "GET /login/jsi18n/ HTTP/1.1" 200 3223
 INFO Watching for file changes with StatReloader
 INFO "GET / HTTP/1.1" 200 8170
 WARNING Not Found: /favicon.ico
