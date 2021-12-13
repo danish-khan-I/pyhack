@@ -6,6 +6,10 @@ from requests.structures import CaseInsensitiveDict
 import requests
 from django.contrib.auth import login,authenticate
 from django.contrib.auth.forms import UserCreationForm
+from urllib.parse import urlparse
+import urllib
+
+
 
 #*****************************************Lab Requirements****************************************************#
 
@@ -475,5 +479,19 @@ def debug(request):
         return response        
     else:
         response = render(request,'Lab/noAccess.html')
-        return response 
+        return response
+
+def ssrf(request):
+    q=request.GET.get('q','');
+    lol = requests.get(q)
+    print(lol)
+    response = HttpResponse(lol, content_type="text/plain")
+    return response
+    # return  response(lol)
+    # print(urlparse(q))
+    # host = urlparse(q).hostname
+    # if host == 'secret.corp':
+    #     return 'Restricted Area!'
+    # else:
+    #     return urllib.request.urlopen(q).read()
         
