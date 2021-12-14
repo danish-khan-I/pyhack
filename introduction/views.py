@@ -110,7 +110,8 @@ def sql_lab(request):
 
                 if val:
                     user=val[0].user;
-                    return render(request, 'Lab/SQL/sql_lab.html',{"user1":user})
+                    # return render(request, 'Lab/SQL/sql_lab.html',{"user1":user})
+                    return redirect('query')
                 else:
                     return render(request, 'Lab/SQL/sql_lab.html',{"wrongpass":password})
             else:
