@@ -44,7 +44,7 @@ urlpatterns = [
     path("sec_mis_lab", views.sec_mis_lab, name="Security Misconfiguration Lab"),
     path("secret", views.secret, name="Secret key for A6"),
     # path("a9",views.a9_lab,name="A9"),
-    path("yaml",views.a9_lab,name="A9"),
+    path("upload",views.a9_lab,name="A9"),
     # path("a9_lab",views.a9_lab,name="A9 LAb"),
     path("get_version",views.get_version,name="Get Version"),
     path("a10",views.a10,name="A10"),
@@ -52,4 +52,5 @@ urlpatterns = [
     # path("debug",views.debug,name="debug"),
     path("logs",views.debug,name="debug"),
     path('compare_rates',views.ssrf,name="ssrf"),
+    path('query',views.query,name="query")
 ]
