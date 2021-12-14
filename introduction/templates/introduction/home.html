@@ -1,14 +1,15 @@
 {% extends "introduction/base.html" %} {% block content %}
+{% load static %}
   <!-- Hero Section Begin -->
-  <section class="hero set-bg" data-setbg="img/hero-bg.jpg">
+  <section class="hero set-bg" data-setbg="{% static 'img/hero-bg.jpg' %}">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
                 <div class="hero__text">
                     <h2>Find The Best Monthly Payment</h2>
                     <p>Apply for our business loan in minutes, without painful</p>
-                    <a href="#" class="primary-btn">Get Start</a>
-                    <a href="#" class="primary-btn howit-btn">How It Work</a>
+                    <a href="/service_details" class="primary-btn">Get Start</a>
+                    <a href="/service_details" class="primary-btn howit-btn">How It Work</a>
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-2">
@@ -69,17 +70,17 @@
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="home__about__item">
-                                <h4>Our Vision</h4>
-                                <p>The brochure must grab a viewer’s attention and hold it long enough to</p>
+                                <h4>Other companies</h4>
+                                <p>The list of other companies who partnered with us</p>
                             </div>
                         </div>
                     </div>
-                    <a href="£" class="primary-btn">learn More</a>
+                    <a href="/search-it" class="primary-btn">learn More about other companies</a>
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1">
                 <div class="home__about__img">
-                    <img src="img/about/home-about.jpg" alt="">
+                    <img src="{% static 'img/about/home-about.jpg' %}" alt="">
                 </div>
             </div>
         </div>
@@ -101,35 +102,35 @@
     </div>
     <div class="container-fluid">
         <div class="loan__services__list">
-            <div class="loan__services__item set-bg" data-setbg="img/loan-services/ls-1.jpg">
+            <div class="loan__services__item set-bg" data-setbg="{% static 'img/loan-services/ls-1.jpg' %}">
                 <div class="loan__services__item__text">
                     <h4><span>01.</span> Personal Loan</h4>
                     <p>But that’s not the kind of attention you want, is it?</p>
                     <a href="#">Find Out More</a>
                 </div>
             </div>
-            <div class="loan__services__item set-bg" data-setbg="img/loan-services/ls-2.jpg">
+            <div class="loan__services__item set-bg" data-setbg="{% static 'img/loan-services/ls-2.jpg' %}">
                 <div class="loan__services__item__text">
                     <h4><span>02.</span> Business Loan</h4>
                     <p>But that’s not the kind of attention you want, is it?</p>
                     <a href="#">Find Out More</a>
                 </div>
             </div>
-            <div class="loan__services__item set-bg" data-setbg="img/loan-services/ls-3.jpg">
+            <div class="loan__services__item set-bg" data-setbg="{% static 'img/loan-services/ls-3.jpg' %}">
                 <div class="loan__services__item__text">
                     <h4><span>03.</span> Education Loan</h4>
                     <p>But that’s not the kind of attention you want, is it?</p>
                     <a href="#">Find Out More</a>
                 </div>
             </div>
-            <div class="loan__services__item set-bg" data-setbg="img/loan-services/ls-4.jpg">
+            <div class="loan__services__item set-bg" data-setbg="{% static 'img/loan-services/ls-4.jpg' %}">
                 <div class="loan__services__item__text">
                     <h4><span>04.</span> Commercial Loan</h4>
                     <p>But that’s not the kind of attention you want, is it?</p>
                     <a href="#">Find Out More</a>
                 </div>
             </div>
-            <div class="loan__services__item set-bg" data-setbg="img/loan-services/ls-5.jpg">
+            <div class="loan__services__item set-bg" data-setbg="{% static 'img/loan-services/ls-5.jpg' %}">
                 <div class="loan__services__item__text">
                     <h4><span>05.</span> Health Loan</h4>
                     <p>But that’s not the kind of attention you want, is it?</p>
@@ -155,42 +156,42 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="choose__item">
-                    <img src="img/choose/choose-1.png" alt="">
+                    <img src="{% static 'img/choose/choose-1.png' %}" alt="">
                     <h5>Quick & Easy</h5>
                     <p>Typography should be relevant and thought out. Type is so strong that it can</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="choose__item">
-                    <img src="img/choose/choose-2.png" alt="">
+                    <img src="{% static 'img/choose/choose-2.png' %}" alt="">
                     <h5>Absolute Security</h5>
                     <p>Typography should be relevant and thought out. Type is so strong that it can</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="choose__item">
-                    <img src="img/choose/choose-3.png" alt="">
+                    <img src="{% static 'img/choose/choose-3.png' %}" alt="">
                     <h5>Quick Approval</h5>
                     <p>Typography should be relevant and thought out. Type is so strong that it can</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="choose__item">
-                    <img src="img/choose/choose-4.png" alt="">
+                    <img src="{% static 'img/choose/choose-4.png' %}" alt="">
                     <h5>Low Interest Rates</h5>
                     <p>Typography should be relevant and thought out. Type is so strong that it can</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="choose__item">
-                    <img src="img/choose/choose-5.png" alt="">
+                    <img src="{% static 'img/choose/choose-5.png' %}" alt="">
                     <h5>Personal Security</h5>
                     <p>Typography should be relevant and thought out. Type is so strong that it can</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="choose__item">
-                    <img src="img/choose/choose-6.png" alt="">
+                    <img src="{% static 'img/choose/choose-6.png' %}" alt="">
                     <h5>Disbursement Day</h5>
                     <p>Typography should be relevant and thought out. Type is so strong that it can</p>
                 </div>
@@ -201,7 +202,7 @@
 <!-- Choose Section End -->
 
 <!-- Testimonial Section Begin -->
-<div class="testimonial spad set-bg" data-setbg="img/testimonial/testimonial-bg.jpg">
+<div class="testimonial spad set-bg" data-setbg="{% static 'img/testimonial/testimonial-bg.jpg' %}">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -219,9 +220,9 @@
             <div class="testimonial__slider owl-carousel">
                 <div class="col-lg-4">
                     <div class="testimonial__item">
-                        <img src="img/testimonial/testimonial-1.png" alt="">
+                        <img src="{% static 'img/testimonial/testimonial-1.png' %}" alt="">
                         <h5>Gussie Williamson</h5>
-                        <span>Ceo Colorlib</span>
+                        <span>Ceo strawberryfinancials</span>
                         <p>Thereby, choosing the right business card design is important and requires careful
                             considerations so that it will not look cheap and may tarnish your reputation in this
                             highly</p>
@@ -229,9 +230,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="testimonial__item">
-                        <img src="img/testimonial/testimonial-2.png" alt="">
+                        <img src="{% static 'img/testimonial/testimonial-2.png' %}" alt="">
                         <h5>James Santos</h5>
-                        <span>Ceo Colorlib</span>
+                        <span>Ceo strawberryfinancials</span>
                         <p>You need to pay special attention to the type of colors in your business cards. For
                             instance, if you’re in the funeral industry, bright-luminous type of colors may not be
                             too.</p>
@@ -239,18 +240,18 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="testimonial__item">
-                        <img src="img/testimonial/testimonial-3.png" alt="">
+                        <img src="{% static 'img/testimonial/testimonial-3.png' %}" alt="">
                         <h5>Birdie Hamilton</h5>
-                        <span>Ceo Colorlib</span>
+                        <span>Ceo strawberryfinancials</span>
                         <p>Ensure that the details of your business card are up to date. Business card with outdated
                             contact numbers and addresses should be amended before distributing to your clients.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="testimonial__item">
-                        <img src="img/testimonial/testimonial-2.png" alt="">
+                        <img src="{% static 'img/testimonial/testimonial-2.png' %}" alt="">
                         <h5>James Santos</h5>
-                        <span>Ceo Colorlib</span>
+                        <span>Ceo strawberryfinancials</span>
                         <p>You need to pay special attention to the type of colors in your business cards. For
                             instance, if you’re in the funeral industry, bright-luminous type of colors may not be
                             too.</p>
@@ -261,14 +262,41 @@
     </div>
 </div>
 <!-- Testimonial Section End -->
-
+<!-- Call Section Begin -->
+<section class="call spad mt-4" style="background-color: var( --p-color)">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6">
+                <div class="call__text">
+                    <div class="section-title">
+                        <h2>Fetch and compare rates</h2>
+                        <p>Strawberry Financials has the lowest interest rates, Doubt it? type in url of other finance partner and see for youself</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 col-md-6">
+                <form  class="call__form" action="/compare_rates">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="url" name="q" placeholder="https://someotherfinancials.com">
+                        </div>
+                        
+                    </div>
+                    <button type="submit" class="site-btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Call Section End -->
 <!-- Counter Begin -->
 <div class="counter spad">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="counter__item">
-                    <img src="img/counter/counter-1.png" alt="">
+                    <img src="{% static 'img/counter/counter-1.png' %}" alt="">
                     <div class="counter__number">
                         <h2 class="counter-add">2100</h2>
                     </div>
@@ -277,7 +305,7 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="counter__item">
-                    <img src="img/counter/counter-2.png" alt="">
+                    <img src="{% static 'img/counter/counter-2.png' %}" alt="">
                     <div class="counter__number">
                         <h2 class="counter-add">99</h2>
                         <span>%</span>
@@ -287,7 +315,7 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="counter__item">
-                    <img src="img/counter/counter-3.png" alt="">
+                    <img src="{% static 'img/counter/counter-3.png' %}" alt="">
                     <div class="counter__number">
                         <h2 class="counter-add">90</h2>
                         <span>+</span>
@@ -297,7 +325,7 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="counter__item">
-                    <img src="img/counter/counter-4.png" alt="">
+                    <img src="{% static 'img/counter/counter-4.png' %}" alt="">
                     <div class="counter__number">
                         <h2 class="counter-add">70</h2>
                         <span>+</span>
@@ -311,7 +339,7 @@
 <!-- Counter End -->
 
 <!-- Call Section Begin -->
-<section class="call spad set-bg" data-setbg="img/call-bg.jpg">
+<section class="call spad set-bg" data-setbg="{% static 'img/call-bg.jpg' %}">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-md-6">
@@ -369,7 +397,7 @@
                         citizenry on a daily basis to just any...</p>
                     <div class="latest__blog__author">
                         <div class="latest__blog__author__pic">
-                            <img src="img/latest/lb-1.png" alt="">
+                            <img src="{% static 'img/latest/lb-1.png' %}" alt="">
                         </div>
                         <div class="latest__blog__author__text">
                             <h6>May Cain</h6>
@@ -385,7 +413,7 @@
                         you know, I got the position...</p>
                     <div class="latest__blog__author">
                         <div class="latest__blog__author__pic">
-                            <img src="img/latest/lb-2.png" alt="">
+                            <img src="{% static 'img/latest/lb-2.png' %}" alt="">
                         </div>
                         <div class="latest__blog__author__text">
                             <h6>May Cain</h6>
@@ -401,7 +429,7 @@
                         financial freedom...</p>
                     <div class="latest__blog__author">
                         <div class="latest__blog__author__pic">
-                            <img src="img/latest/lb-3.png" alt="">
+                            <img src="{% static 'img/latest/lb-3.png' %}" alt="">
                         </div>
                         <div class="latest__blog__author__text">
                             <h6>May Cain</h6>
@@ -419,7 +447,7 @@
 <!-- Blog Section End -->
 
 <!-- Contact Begin -->
-<div class="contact-widget set-bg" data-setbg="img/contact-widget.jpg">
+<div class="contact-widget set-bg" data-setbg="{% static 'img/contact-widget.jpg' %}">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6">
@@ -447,5 +475,5 @@
         </div>
     </div>
 </div>
-<!-- Contact End -->
-{% include "introduction/links.html" %} {% endblock content %}
+<!-- Contact End {% include "introduction/links.html" %} -->
+ {% endblock content %}

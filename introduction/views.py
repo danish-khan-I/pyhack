@@ -1,3 +1,5 @@
+from django.http import JsonResponse
+
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from .models import  FAANG,info,login,comments,authLogin
@@ -6,6 +8,9 @@ from requests.structures import CaseInsensitiveDict
 import requests
 from django.contrib.auth import login,authenticate
 from django.contrib.auth.forms import UserCreationForm
+from urllib.parse import urlparse
+import urllib
+from django.db import connection
 
 #*****************************************Lab Requirements****************************************************#
 
@@ -306,7 +311,12 @@ def robots(request):
         return response
 
 def error(request):
-    return 
+    debug  =  request.headers.get('debug', 'false')
+    if debug == 'true':
+        return
+    else:
+        response = render(request,'Lab/noAccess.html')
+        return response
 
 
 #******************************************************  Command Injection  ***********************************************************************#
@@ -462,6 +472,69 @@ def a10_lab(request):
         return redirect('login')
 
 def debug(request):
-    response = render(request,'Lab/A10/debug.log')
-    response['Content-Type'] =  'text/plain'
+    debug  =  request.headers.get('debug', 'false')
+    print(debug)
+    if debug == 'true':
+        response = render(request,'Lab/A10/debug.log')
+        response['Content-Type'] =  'text/plain'
+        return response        
+    else:
+        response = render(request,'Lab/noAccess.html')
+        return response
+
+def ssrf(request):
+    q=request.GET.get('q','');
+    lol = requests.get(q)
+    print(lol)
+    response = HttpResponse(lol, content_type="text/plain")
     return response
+    # return  response(lol)
+    # print(urlparse(q))
+    # host = urlparse(q).hostname
+    # if host == 'secret.corp':
+    #     return 'Restricted Area!'
+    # else:
+    #     return urllib.request.urlopen(q).read()
+@csrf_exempt        
+def query(request):
+    if request.method == "POST":
+        
+        queries=request.POST['query']
+        # print(request.POST)
+        # print(queries)
+        if(queries):
+            if(True):
+                # try:
+                    # print(queries)
+                    cursor = connection.cursor()
+                    data =  cursor.execute(queries)
+
+                    data = cursor.fetchall()
+                  
+                    # print(res)
+                    # data = login.objects.raw(queries)
+                    # assuming obj is a model instance
+                    # serialized_obj = serializers.serialize('json', [ data, ])
+                    # serialized_obj =  HttpResponse(data)  
+                    # print( json.dumps(data))
+                    # data = serializers.serialize('json',data)
+                    # data = json.dumps(data)
+                    # print(res)
+                    # return HttpResponse(res, content_type="application/json")
+                    # print(serialized_obj)
+                    # data=comments.objects.all();
+                    # print(data)
+                    # for each in data:
+                    #     print(each.attr())
+                # except SyntaxError:
+                #     data="Invalid query"
+                # except:
+                #     data="Invalid query"
+            return render(request,"Lab/query.html",{"data":data})
+        else:
+            return render(request,"Lab/query.html")
+        # print(table)
+        # print(query)
+        # return "query"
+    else:
+        return render(request,"Lab/query.html")

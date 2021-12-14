@@ -62,7 +62,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'pyhack.urls'
+ROOT_URLCONF = 'strawberryfinancials.urls'
 
 TEMPLATES = [
     {
@@ -80,7 +80,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pyhack.wsgi.application'
+WSGI_APPLICATION = 'strawberryfinancials.wsgi.application'
 
 
 # Database
