@@ -2,6 +2,7 @@ from django.http import JsonResponse
 
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
+from django.template import loader
 from .models import  FAANG,info,login,comments,authLogin
 from django.core import serializers
 from requests.structures import CaseInsensitiveDict
@@ -431,16 +432,16 @@ def a9_lab(request):
             return render(request,"Lab/A9/a9_lab.html")
         else:
 
-            try :
+            # try :
                 file=request.FILES["file"]
-                try :
-                    data = yaml.load(file)
-                    return render(request,"Lab/A9/a9_lab.html",{"data":data})
-                except:
-                    return render(request, "Lab/A9/a9_lab.html", {"data": "Error"})
+                # try :
+                data = yaml.load(file,Loader=yaml.Loader)
+                return render(request,"Lab/A9/a9_lab.html",{"data":data})
+                # except:
+                return render(request, "Lab/A9/a9_lab.html", {"data": "Error"})
 
-            except:
-                return render(request, "Lab/A9/a9_lab.html", {"data":"Please Upload a Yaml file."})
+            # except:
+            #     return render(request, "Lab/A9/a9_lab.html", {"data":"Please Upload a Yaml file."})
     else:
         return redirect('login')
 def get_version(request):
